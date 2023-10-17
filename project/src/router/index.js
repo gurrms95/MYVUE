@@ -118,6 +118,30 @@ const routes = [
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
       )
+  },
+  {
+    path: '/reuse/pagetitle',
+    name: 'PageView',
+    component: () =>
+      import(
+        /* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/4_reuse/PageView.vue'
+      )
+  },
+  {
+    path: '/reuse/parent',
+    name: 'ParentView',
+    component: () =>
+      import(
+        /* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/4_reuse/ParentView.vue'
+      )
+  },
+  {
+    path: '/reuse/list',
+    name: 'ListView',
+    component: () =>
+      import(
+        /* webpackChunkName: "reuse", webpackPrefetch:true */ '../views/4_reuse/ListView.vue'
+      )
   }
 ]
 
